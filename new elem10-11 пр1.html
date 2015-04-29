@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 10-11 пр#1</title>
+<meta charset="utf-8">
+<script>
+	window.onload=function(){
+		var df = document.forms.f1;
+		df.change.onclick=function(){
+			if(this.type == "button")this.type="checkbox";
+			else {this.type="button";
+				this.checked=false;
+				}
+		}
+	}
+</script>
+</head>
+<body>
+	<form name="f1">
+		<input type="button" name="change" value="Change"/>
+	</form>
+</body>
+</html>

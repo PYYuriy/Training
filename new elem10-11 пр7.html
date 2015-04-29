@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 10-11 pr#7</title>
+<meta charset="utf-8">
+<script>
+	window.onload=function(){
+		var df = document.forms.f1;
+			df.show.onclick=function(){
+				alert(df.list.value);
+			}
+	}
+	//ревлызувати плейсгодер
+</script>
+</head>
+<body>
+	<form name="f1">
+		<select name="list">
+			<option>Text1</option>
+			<option>Text2</option>
+			<option>Text3</option>
+			<option>Text4</option>
+		</select>
+		<input type="button" name="show" value="Show"/>	
+	</form>
+</body>
+</html>

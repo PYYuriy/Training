@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 10-11 pr#7</title>
+<meta charset="utf-8">
+<style>
+	input{
+		color:#ccc;
+	}
+</style>
+<script>
+	window.onload=function(){
+		var df = document.forms.f1.show;
+			df.onblur = function(){
+			if(df.value==""){
+				df.value="Show";
+				df.style.color ="#ccc";
+			}else{
+				df.style.color ="#000";
+			}
+		}
+		df.onfocus=function(){
+			df.style.color="#000";
+			df.value="";
+		}
+	}
+	//ревлызувати плейсгодер
+</script>
+</head>
+<body>
+	<form name="f1">
+			<input type="text" name="show" value="Show"/>	
+	</form>
+</body>
+</html>

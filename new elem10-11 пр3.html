@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 10-11 pr3</title>
+<meta charset="utf-8">
+<script>
+	window.onload=function(){
+		var df = document.forms.f1;
+			df.bold_btn.onclick=function(){
+				if (this.checked) 
+				document.getElementById("text").style.fontStyle="italic";
+				else 
+				document.getElementById("text").style.fontStyle="normal";
+			}
+	}
+</script>
+</head>
+<body>
+	<form name="f1">
+		<input type="checkbox" name="bold_btn"/>
+		<span id="text"> Check to make this text bold </span>
+	</form>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Home 8-9</title>
+<meta charset="utf-8">
+
+<style>
+body{
+background-size:100%;
+}
+td{
+	width:100px;
+	height:100px;
+	border:3px solid #ccc;
+	background-size:cover;
+	cursor:pointer;
+
+}
+table{
+	margin:30px auto;
+	border-collapse:collapse;
+}
+</style>
+
+</head>
+
+<body id="bodyy">
+
+<button id="col">Color</button>
+<button id="imgs">Imags</button>
+<table id="tableCol">
+<tr>
+	<td id="col11" style=" background:#FF8080"></td>
+	<td id="col12" style=" background:#FFFF80"></td>
+	<td id="col13" style=" background:#80FF80"></td>
+</tr>
+<tr>
+	<td id="col21" style=" background:#80FFFF"></td>
+	<td id="col22" style=" background:#0080FF"></td>
+	<td id="col23" style=" background:#FF80C0"></td>
+</tr>
+<tr>
+	<td id="col31" style=" background:#FF0000"></td>
+	<td id="col32" style=" background:#00FF00"></td>
+	<td id="col33" style=" background:#000080"></td>
+</tr>
+</table>
+<script>
+function getE(a){
+	return document.getElementById(a);
+	}
+/*function fGetE(b){
+	return this.style.background;
+	}
+	*/
+	/*function call(a){
+			getE('bodyy').style.background = a;
+	}
+	*/
+
+getE('col11').onclick = function(){//call(fGetE(b))
+	getE('bodyy').style.background = this.style.background;
+	//alert(fGetE('bodyy'));
+	//alert(fGetE('col11'));
+	//fGetE('bodyy') =fGetE('col11');
+	//call();
+}
+getE('col12').onclick = function(){
+ getE('bodyy').style.background = this.style.background;
+	}
+getE('col13').onclick = function(){
+	getE('bodyy').style.background = this.style.background;
+	}
+
+
+getE('col21').onclick = function(){
+	getE('bodyy').style.background = this.style.background;
+	}
+getE('col22').onclick = function(){
+	getE('bodyy').style.background = this.style.background;
+	}
+getE('col23').onclick = function(){
+	getE('bodyy').style.background = this.style.background;
+	}
+
+
+getE('col31').onclick = function(){
+	getE('bodyy').style.background = this.style.background;
+	}
+getE('col32').onclick = function(){
+	getE('bodyy').style.background = this.style.background;
+	}
+getE('col33').onclick = function(){
+	getE('bodyy').style.background = this.style.background;
+	}
+
+document.getElementById('imgs').onclick = function(){
+	getE('col11').style.background = "url(imgss/11.jpg)";
+	getE('col12').style.background = "url(imgss/12.jpg)";
+	getE('col13').style.background = "url(imgss/13.jpg)";
+	getE('col21').style.background = "url(imgss/21.jpg)";
+	getE('col22').style.background = "url(imgss/22.jpg)";
+	getE('col23').style.background = "url(imgss/23.jpg)";
+	getE('col31').style.background = "url(imgss/31.jpg)";
+	getE('col32').style.background = "url(imgss/32.jpg)";
+	getE('col33').style.background = "url(imgss/33.jpg)";
+	getE('col11').style.backgroundSize = "cover";
+	getE('col12').style.backgroundSize = "cover";
+	getE('col13').style.backgroundSize = "cover";
+	getE('col21').style.backgroundSize = "cover";
+	getE('col22').style.backgroundSize = "cover";
+	getE('col23').style.backgroundSize = "cover";
+	getE('col31').style.backgroundSize = "cover";
+	getE('col32').style.backgroundSize = "cover";
+	getE('col33').style.backgroundSize = "cover";
+
+}
+document.getElementById('col').onclick = function(){
+	getE('col11').style.background = "#FF8080";
+	getE('col12').style.background = "#FFFF80";
+	getE('col13').style.background = "#80FF80";
+	getE('col21').style.background = "#80FFFF";
+	getE('col22').style.background = "#0080FF";
+	getE('col23').style.background = "#FF80C0";
+	getE('col31').style.background = "#FF0000";
+	getE('col32').style.background = "#00FF00";
+	getE('col33').style.background = "#000080";
+}
+</script>
+</body>
+
+</html>

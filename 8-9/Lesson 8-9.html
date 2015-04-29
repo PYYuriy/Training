@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 8-9</title>	
+<meta charset="utf-8"/>
+<style>
+body{
+	background-image:url(mir-pod-vodoj-[1920x1200]-[26076418].jpg);
+}
+/*div{
+background: blue;
+width:100px;
+height:100px;
+border: solid 2px green;
+padding:10px;
+}
+*/
+</style>
+</head>
+
+<body>
+<!--
+<h1 id="hh1">Text1</h1>
+<h1 id="hh2">Text2</h1>
+
+
+<div id="d">У мене э секрет!</div>
+-->
+
+<button id="up" >up</button>
+<button id="down">down</button>
+<button id="left">left</button>
+<button id="right">right</button>
+<img id="image" src="right.gif" style=" bottom: 20px; left:10px; position: absolute;">
+<script>
+
+/*
+document.getElementById("hh1").onmouseover = function(){
+//document.getElementById("hh1").style.background ="red";
+this.style.background ="red";
+document.getElementById("hh2").style.background ="green";
+}
+document.getElementById("hh1").onmouseout = function(){
+this.style.background ="none";
+document.getElementById("hh2").style.background ="none";
+}
+document.getElementById("hh2").onclick = function(){
+alert(this.innerHTML);
+}
+*/
+/*
+document.getElementById("d").onmouseover = function(){
+this.style.background ="red";
+this.innerHTML = "Хочеш дізнатися ?"
+}
+document.getElementById("d").onmouseout = function(){
+this.style.background ="blue";
+this.innerHTML = "У мене э секрет!"
+}
+document.getElementById("d").onmousedown = function(){
+this.style.background ="#ccc";
+this.innerHTML =" А я тобы не скажу";
+}
+document.getElementById("d").onmouseup = function(){
+this.style.background ="red";
+this.innerHTML = "Хочеш дізнатися ?"
+}
+*/
+function getE(a){
+	return document.getElementById(a);
+}
+//  -----------------------up----------------------------
+document.getElementById("up").onclick = function(){
+getE("image").src ="up.gif";
+var but = parseInt(getE("image").style.bottom) ;
+but += 20 ;
+but += "px";
+getE("image").style.bottom=but;
+ }
+ // ------------------------down -----------------------------
+ document.getElementById("down").onclick = function(){
+getE("image").src ="down.gif";
+var but = parseInt(getE("image").style.bottom) ;
+but -= 20 ;
+but += "px";
+getE("image").style.bottom=but;
+ }
+  // --------------------left -----------------------------
+ document.getElementById("left").onclick = function(){
+getE("image").src ="left.gif";
+var but = parseInt(getE("image").style.left) ;
+but -= 20 ;
+but += "px";
+getE("image").style.left=but;
+ }
+  // ----------------------right -----------------------------
+ document.getElementById("right").onclick = function(){
+getE("image").src ="right.gif";
+var but = parseInt(getE("image").style.left) ;
+but += 20 ;
+but += "px";
+getE("image").style.left=but;
+ }
+
+</script>
+</body>
+</html>

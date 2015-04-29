@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 10-11 pr5</title>
+<meta charset="utf-8">
+<script>
+	window.onload=function(){
+		var df = document.forms.f1;
+		for(var i=0; i< df.length; i++){
+			df.elements[i].onclick=function(){
+				for(var j=0; j< df.length; j++){
+					if(df.rbtn[j].checked)
+						/*var parNod = document.getElementsByTagName('p')[j];
+						var child=document.getElementsByTagName('input')[j];
+					parNod.removeChild(child);
+					alert(document.getElementsByTagName('p')[j].innerHTML);
+					parNod.appendChild(child);
+					*/
+				}
+			}
+		}
+	}
+	
+	// текст витянути з параграфу
+</script>
+</head>
+<body>
+	<form name="f1">
+		<p><input type="radio" name="rbtn" value="Text1"/> Text111</p>
+		<p><input type="radio" name="rbtn" value="Text2"/> Text211</p>
+		<p><input type="radio" name="rbtn" value="Text3"/> Text311</p>
+		<p><input type="radio" name="rbtn" value="Text4"/> Text411</p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 3</title>	
+<meta charset="utf-8"/>
+<style>
+table,tr,td{
+border:1px solid red;
+border-collapse:collapse;
+}
+#gray{
+background-color: #ccc;
+width: 20px;
+height:20px;
+}
+#black{
+background-color: #000;
+width: 20px;
+height:20px;
+}
+</style>
+<script>
+	/*
+	var pass = 'yura', i=5;
+	do{
+	var enterPass = prompt('Enter password ','');
+		if( enterPass == pass ){
+		var i = 0;
+		 alert('welcom in our site');
+	}else{
+		i--;
+		alert('yo have '+ i + ' sprob' );
+		if(i == 0) alert('today you cannot enter');
+		};
+	}while(i > 0);
+	*/
+	
+	/*
+	var pass = 'banzay', i=5;
+	while(i > 0){
+	   var enterPass = prompt('Enter password ','');
+		if( enterPass == pass ){
+		var i = 0;
+		alert('welcom in our site');
+		}else{
+		i--;
+		alert('yo have '+ i + ' sprob' );
+		if(i == 0) alert('today you cannot enter');
+		};
+	}
+	*/
+	/*
+	var n = parseInt(prompt('enter number','')),s = '';
+	for(var i=1; i <= n; i++){
+	if(i%2 == 0) s += i + ' ;   ';
+	}
+	alert(s);
+	*/
+	/*
+	var text = prompt('enter text','');
+	var color =prompt('enter color','');
+	
+	document.write('<h1 style="color:'+color+'">'+ text +'</h1>');
+	*/
+	/*
+	var list = prompt('Enter ul or ol','');
+	var items = parseInt(prompt('long list ',''));
+	var types = prompt('Enter type','');
+	var t = "<"+list+" type='"+types+ "'>";
+	for(var i=1; i<=items; i++){
+	t += "<li>"+ prompt("text","")+"</li>";
+	}
+	t += "</"+list+">";
+	document.write(t);
+	*/
+	//ввести кількість стовпців і кількість рядків і відобразити таблицю
+/*
+	var rowd = parseInt(prompt('enter number of rowd',''));
+	var stowpci = parseInt(prompt('enter number of stowpci ',''));
+	var t = "<table>";
+	for(var i=0; i<rowd; i++){
+	t += "<tr>";
+			for(var j=0; j<stowpci; j++){
+		if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)){
+		t+="<td id='gray' > </td>";
+		}else{
+		t+="<td id='blakk' > </td>";
+			}
+		}
+	t += "</tr>";
+	};
+		t += "</table>";
+	document.write(t);
+*/
+/*	var rowd = parseInt(prompt('enter number of rowd',''));
+	var stowpci = parseInt(prompt('enter number of stowpci ',''));
+	var t = "<table>";
+				for(var i=0; i<rowd; i++){
+				t += "<tr>";
+						if(i%2==0){
+								for(var j=stowpci/2; j<stowpci; j++){
+										t+="<td id='gray' > </td>";
+										t+="<td id='blakk' > </td>";
+										}
+								}else{
+								for(var j=stowpci/2; j<stowpci; j++){
+										t+="<td id='blakk' > </td>";
+										t+="<td id='gray' > </td>";
+										}
+								}
+				t += "</tr>";
+				};
+		t += "</table>";
+	document.write(t);*/
+
+</script>
+</head>
+<body>
+	<form name="f1">
+<p> Введіть кількість рядків таблиці <input type="number" name="trNamber"/></p>
+				<p> Введіть кількість стовпців в таблиці <input type="number" name="tbNamber"/></p>
+				<input type="button" name="creatTable" value="Додати"/>
+			</form>
+			<script>
+
+	/*		var df = document.forms.f1;
+	df.creatTable.onclick = function(){
+			var rowd = +df.trNamber.value;
+				var stowpci = +df.tbNamber.value ;
+			var t = "<table>";
+				for(var i=0; i<rowd; i++){
+				t += "<tr>12";
+						for(var j=0; j<stowpci; j++){
+					t+="<td id='gray'>12 </td>";
+					}
+				t += "</tr>";
+				};
+					t += "</table>";
+				document.write(t);
+			}*/
+			var df = document.forms.f1;
+	df.creatTable.onclick = function(){
+			var rowd = +df.trNamber.value;
+				var stowpci = +df.tbNamber.value ;
+	var t = "<table>";
+	for(var i=0; i<rowd; i++){
+	t += "<tr>";
+			for(var j=0; j<stowpci; j++){
+		if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)){
+		t+="<td id='gray' > 1</td>";
+		}else{
+		t+="<td id='black' > 2</td>";
+			}
+		}
+	t += "</tr>";
+	};
+		t += "</table>";
+	document.write(t);
+}
+			</script>
+</body>
+</html>

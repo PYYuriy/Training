@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body id="body">
+	<h1 id="header">my page</h1>
+	<p id="favorite">мої улюблені сайти:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://google.com" id="a1">google</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://design.ru" id="a2">design.ru</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://demiart.ru" id="a3">demiart</a>
+	</p>
+	<div id="task">
+		За допомогою JavaScript запропонувати користувачу вибрати стиль для сторінки. А саме:
+		<ul id="list">
+			<li>фон для сторінки</li>
+			<li>тип шпифта на сторінці</li>
+			<li>вирівнювання для заголовка з ідентифікатором header</li>
+			<li>фон для параграфа зі зсилками</li>
+			<li>колір тексту у параграфі зі зсилками і для самих зсилок. При чому колір тексту для зсилок призначити у циклі</li>
+			<li>колір, розмір, товщину тексту у елементі з ідентифікатором task</li>
+			<li>тип маркера для маркованого списку на сторінці</li>
+		</ul>
+		Таким чином слід запропонувати користувачу ввести десять налаштувань сторінки і застосувати їх.<br/>
+		ДОДАТОК ДО ЗАВДАННЯ: замість зсилок на конкретні сайти, вивести у панелі навігації зсилки на три сайти, які вкаже користувач. <br/>
+		Наприклад користувач у віконце prompt() ввів адресу yandex.ru - в такому разі треба створити зсилку, яка вела б на сайт Яндекса, а текстом цієї зсилки (тим, по чому можна клікнути) буде також yandex.ru
+	</div>
+</body>
+</html>
+<script>
+
+	//document.getElementById('body').style.background=prompt('фон для сторінки','');
+	
+	//document.getElementById('body').style.fontFamily=prompt('тип шпифта на сторінці','');
+
+	//document.getElementById('body').style.textAlign=prompt('вирівнювання для заголовка з ідентифікатором header','');
+
+	//document.getElementById('favorite').style.background=prompt('фон для параграфа зі зсилками','');
+
+		/*
+		var i=1;
+		while(i<4){
+    document.getElementById('a'+i).style.background=prompt('background-color','');
+    document.getElementById('a'+i).style.color=prompt('color','');
+    i++;
+    }
+		*/
+
+	 //document.getElementById('task').style.font=prompt('розмір, колір, товщину тексту','');
+
+	//document.getElementById('list').style.listStyleType=prompt('тип маркера для маркованого списку','')
+
+// ДОДАТОК ДО ЗАВДАННЯ
+/*
+	var i=1;
+		while(i<4){
+    document.getElementById('a'+i).href=prompt('Ресурс','');
+    document.getElementById('a'+i).innerHTML =prompt('Текст','');
+    i++;
+		}
+*/
+	</script>

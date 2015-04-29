@@ -1,0 +1,9 @@
+body{
+	background:url(mir-pod-vodoj-[1920x1200]-[26076418].jpg) ;
+		background-size:cover;
+}
+img {
+    position: relative;
+    left: 0;
+    top: 0;
+}

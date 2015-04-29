@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 10-11 pr#4</title>
+<meta charset="utf-8">
+<script>
+	window.onload=function(){
+		var df = document.forms.f1;
+		df.check.onclick=function(){
+			for(var i=0; i < df.length-2; i++){
+			df.elements[i].checked =true;
+			}
+		}
+		df.uncheck.onclick=function(){
+			for(var i=0; i < df.length-2; i++){
+			df.elements[i].checked =false;
+			}
+		}
+	}
+	//є тільки одна кнопка check коли на неї натиснути і вона міняється на uncheck 
+	//при цьому всі чекбокси активні і навпаки
+</script>
+</head>
+<body>
+	<form name="f1">
+		<input type="checkbox" />
+		<input type="checkbox" />
+		<input type="checkbox" />
+		<input type="checkbox" />
+		<input type="checkbox" />
+		<input type="button" name="check" value="Check"/>
+		<input type="button" name="uncheck" value="Uncheck"/>
+	</form>
+</body>
+</html>

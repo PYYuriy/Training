@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 10-11 pr5</title>
+<meta charset="utf-8">
+<script>
+	window.onload=function(){
+		var df = document.forms.f1;
+		for(var i=0; i< df.length; i++){
+			df.elements[i].onclick=function(){
+				for(var j=0; j< df.length; j++){
+					if(df.rbtn[j].checked)
+					alert(df.elements[j].value);
+				}
+			}
+		}
+	}
+	
+	// текст витянути з параграфу
+</script>
+</head>
+<body>
+	<form name="f1">
+		<p><input type="radio" name="rbtn" value="Text1"/> Text1</p>
+		<p><input type="radio" name="rbtn" value="Text2"/> Text2</p>
+		<p><input type="radio" name="rbtn" value="Text3"/> Text3</p>
+		<p><input type="radio" name="rbtn" value="Text4"/> Text4</p>
+	</form>
+</body>
+</html>

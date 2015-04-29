@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>home10-11</title>
+	<style>
+		div{
+			width:150px;
+			height:150px;
+			background:#800080;
+			margin:50px auto;
+			border-radius:50%;
+		}
+	</style>
+	<script>
+	window.onload=function(){
+var i=1;
+		//--out function
+		document.getElementById('chColor').onmouseout=function(){
+			this.style.background='#800080';
+
+		//умова світлофора
+	if(i==1){
+		document.getElementById('chColor').onmouseover=function(){
+			this.style.background='red';
+			}
+		}
+
+	if(i==2){
+		document.getElementById('chColor').onmouseover=function(){
+			this.style.background='#FFFF00';
+		}
+	}
+
+	if(i==3){
+		document.getElementById('chColor').onmouseover=function(){
+			this.style.background='#00FF00';
+		}
+		i=0;
+	}
+	i++;
+}
+
+		}
+	</script>
+</head>
+<body>
+	<div id="chColor"></div>
+</body>
+</html>

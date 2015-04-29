@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title> practis 2</title>
+<script>
+	window.onload=function(){
+		var sf = document.forms.pr2
+		sf.but.onclick=function(){
+			if(sf.leftText.value==""){ 
+				alert("Please enter text!");
+			}else{
+			 sf.rightText.value = sf.leftText.value;
+			}
+		}
+	}
+</script>
+</head>
+<body>
+	<form name="pr2">
+		<input type="text" name="leftText">
+		<input type="button" name="but" value="Copy">
+		<input type="text" name="rightText">
+	</form>
+</body>
+</html>
